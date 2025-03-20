@@ -35,5 +35,14 @@ je veux faire une réservation, au nom de vincent le roux, pour le 30/04/2025. D
 ``` 
 #### Cas d'une vraie demande de déplacement :
 ``` 
-je veux faire une réservation, au nom de vincent le roux, pour le 30/05/2025. Départ : Paris et Arrivée : Paris
+je veux faire une nouvelle réservation
+``` 
+### Demande d'informations sur une réservation : 
+``` 
+peux-tu me dire les réservations que j'ai en cours?
+``` 
+
+### Demande de suppression d'une réservation :
+``` 
+supprime moi mes réservations
 ``` 
