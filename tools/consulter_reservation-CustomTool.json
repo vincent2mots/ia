@@ -1,0 +1,8 @@
+{
+  "name": "consulter_reservation",
+  "description": "## But de cet outil\nCet outil permet d'interroger l'application des réservations de déplacements. On s'en sert ici quand un collaborateur de Future Decision souhaite avoir un état des lieux des réservations en cours. \n\n## Instructions à suivre\n1. S'il te manque le mail de la personne, il faut lui demander",
+  "color": "linear-gradient(rgb(154,27,252), rgb(40,9,39))",
+  "iconSrc": "https://cdn-icons-png.flaticon.com/512/2460/2460877.png",
+  "schema": "[{\"id\":0,\"property\":\"mail\",\"description\":\"mail du collaborateur\",\"type\":\"string\",\"required\":false}]",
+  "func": "const fetch = require('node-fetch');\n\nconst key = '';\nconst mail = $mail;\nconst url = `http://nd-travel-app.fjebejgmc8h3c9c3.francecentral.azurecontainer.io:8000/api/travels/user/${mail}`;\n\ntry {\n\tconst response = await fetch(url, {\n\t\tmethod: 'GET',\n\t\theaders: {\n\t\t    'X-API-Key': `${key}`,\n\t\t\t'Content-Type': 'application/json'\n\t\t}\n\t});\n\n\tconst data = await response.json();\n\n\tif (data.length === 0) {\n\t\tconsole.log(\"Aucun résultat trouvé.\");\n\t\treturn null;\n\t}\n   return data;\n\n} catch (error) {\n\tconsole.error(\"Erreur lors de la récupération des données :\", error);\n\treturn null;\n}\n\n"
+}

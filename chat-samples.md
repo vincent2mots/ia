@@ -44,5 +44,5 @@ peux-tu me dire les réservations que j'ai en cours?
 
 ### Demande de suppression d'une réservation :
 ``` 
-supprime moi mes réservations
+supprime moi la réservation du 30/04/2025
 ``` 

@@ -1,0 +1,8 @@
+{
+  "name": "supprimer_reservation",
+  "description": "## But de cet outil\ncet outil permet de supprimer une demande de réservation (ou déplacement) dans l'application de gestion des déplacements\n\n## Instructions à suivre\n1. Il faut demander le mail si on l'a pas déjà\n2. Il faut demander quelle date aussi on veut supprimer. La date sera donnée au format DD/MM/YYYY mais il faudra le convertir (sans le demander à l'utilisateur) au format YYYY-MM-DD\n3. Il ne faut supprimer que des réservations qui existent déjà! Il faut donc au préalable vérifier qu'elle n'existe pas déjà à l'aide de l'outil \"consulter_reservation\"",
+  "color": "linear-gradient(rgb(9,255,247), rgb(163,191,136))",
+  "iconSrc": "https://cdn-icons-png.flaticon.com/512/2460/2460877.png",
+  "schema": "[{\"id\":0,\"property\":\"mail\",\"description\":\"mail du collaborateur\",\"type\":\"string\",\"required\":false},{\"id\":1,\"property\":\"date\",\"description\":\"date de la réservation\",\"type\":\"string\",\"required\":false}]",
+  "func": "const fetch = require('node-fetch');\n\nconst key = '';\nconst mail = $mail;\nconst date = $date;\nconst url = `http://nd-travel-app.fjebejgmc8h3c9c3.francecentral.azurecontainer.io:8000/api/travels/by-details?email=${mail}&date=${date}`;\n\ntry {\n    const deleteResponse = await fetch(url, {\n        method: 'DELETE',\n        headers: {\n  \t\t  'X-API-Key': `${key}`,\n  \t\t  'Content-Type': 'application/json'\n        }\n    });\n\n    if (deleteResponse.ok) {\n        console.log(\"Réservation supprimée avec succès.\");\n    } else {\n        console.error(\"Erreur lors de la suppression.\");\n    }\n} catch (error) {\n\treturn null;\n}\n\n"
+}
