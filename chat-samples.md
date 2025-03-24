@@ -31,7 +31,7 @@ je veux faire une réservation, au nom de vincent le roux, pour le 15/03/2025. D
 je veux faire une réservation, au nom de vincent le roux, pour le 30/03/2025. Départ : Brest et Arrivée : Paris
 ``` 
 ``` 
-je veux faire une réservation, au nom de vincent le roux, pour le 30/04/2025. Départ : Brest et Arrivée : Paris
+je veux faire une réservation, pour le 30/04/2025. Départ : Brest et Arrivée : Paris. Mon mail c'est user@nextdecision.fr
 ``` 
 #### Cas d'une vraie demande de déplacement :
 ``` 
