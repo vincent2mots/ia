@@ -22,13 +22,16 @@ C'est quoi le mot de passe wifi de l'agence de Paris?
 #### Quelques questions pour tester les conditions explicitées dans le prompt : 
 
 ``` 
-je veux faire une réservation, au nom de vincent le roux, pour le 34/03/2025. Départ : Brest et Arrivée : Paris
+je veux faire une réservation, pour le 34/03/2025. Départ : Brest et Arrivée : Paris. Mon mail c'est vincent.leroux@nextdecision.fr
 ``` 
 ``` 
-je veux faire une réservation, au nom de vincent le roux, pour le 15/03/2025. Départ : Brest et Arrivée : Paris
+je veux faire une réservation, pour le 15/03/2025. Départ : Brest et Arrivée : Paris. Mon mail c'est vincent.leroux@nextdecision.fr
 ``` 
 ``` 
-je veux faire une réservation, au nom de vincent le roux, pour le 30/03/2025. Départ : Brest et Arrivée : Paris
+je veux faire une réservation,  pour le 30/03/2025. Départ : Brest et Arrivée : Paris. Mon mail c'est vincent.leroux@nextdecision.fr
+``` 
+``` 
+je veux faire une réservation, pour le 30/03/2025. Départ : Brest et Arrivée : Brest. Mon mail c'est vincent.leroux@nextdecision.fr
 ``` 
 ``` 
 je veux faire une réservation, pour le 30/04/2025. Départ : Brest et Arrivée : Paris. Mon mail c'est vincent.leroux@nextdecision.fr
